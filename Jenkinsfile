@@ -1,6 +1,6 @@
 pipeline {
     agent any
-	environment{
+    environment{
 		PATH= "E:\devops\Maven\apache-maven-3.8.1\bin:$PATH"
 	
 	}
@@ -12,7 +12,7 @@ pipeline {
             }
         }
 		
-		stage('Maven') {
+        stage('Maven') {
             steps {
                 sh "mvn clean install package"
             }
